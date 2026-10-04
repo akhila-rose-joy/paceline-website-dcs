@@ -1,0 +1,423 @@
+*{box-sizing:border-box;margin:0;padding:0}
+
+body{
+    font-family:Arial,sans-serif;
+    background:#F5F0E6;
+    color:#101C2C;
+    line-height:1.5
+}
+
+img{width:100%;display:block}
+a{text-decoration:none;color:inherit}
+button{cursor:pointer;border:0}
+
+.announcement-bar{
+    background:#101C2C;
+    color:#F5F0E6;
+    text-align:center;
+    padding:10px;
+    font-size:13px
+}
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 6%
+}
+
+.logo{font-size:26px;font-weight:bold}
+.nav-links{display:flex;gap:25px}
+.nav-links a{font-size:14px}
+.nav-icons{display:flex;gap:15px;font-size:19px}
+
+/* HOME */
+
+.hero{
+    background:#1769E0;
+    padding:100px 8%;
+    min-height:600px;
+    display:flex;
+    align-items:center
+}
+
+.hero-content{max-width:600px}
+.small-heading{
+    font-size:12px;
+    font-weight:bold;
+    letter-spacing:2px;
+    margin-bottom:18px
+}
+
+.hero h1{
+    font-size:78px;
+    line-height:.95;
+    margin-bottom:25px
+}
+
+.hero-text{
+    font-size:18px;
+    max-width:450px;
+    margin-bottom:25px
+}
+
+button,.about-cta a{
+    background:#101C2C;
+    color:#F5F0E6;
+    padding:13px 22px;
+    font-weight:bold
+}
+
+button:hover,.about-cta a:hover{
+    background:#F28C28;
+    color:#101C2C
+}
+
+.categories,.new-arrivals,.people-section,.principles,.timeline{
+    padding:80px 8%
+}
+
+.section-heading{margin-bottom:40px}
+.section-heading h2{
+    font-size:48px;
+    line-height:1
+}
+
+.category-grid,.product-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:18px
+}
+
+.category-card,.product-card,.person-card,.principle-card{
+    background:white;
+    border-radius:18px;
+    overflow:hidden
+}
+
+.category-card img{height:330px;object-fit:cover}
+.category-card h3,.category-card p,
+.product-card h3,.product-card>p{margin:15px 20px 0}
+
+.category-card p{margin-bottom:20px}
+
+.filters{
+    display:flex;
+    gap:8px;
+    margin-bottom:30px
+}
+
+.filters button{
+    background:transparent;
+    color:#101C2C;
+    border:1px solid #101C2C;
+    border-radius:20px
+}
+
+.product-image{background:#E8E2D7}
+.product-image img{height:300px;object-fit:cover}
+.product-label{
+    color:#F28C28;
+    font-size:11px;
+    font-weight:bold;
+    margin-top:15px!important
+}
+
+.story-button{
+    display:block;
+    width:max-content;
+    margin:20px auto;
+}
+
+/* MEN + WOMEN */
+
+.running-collections{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:18px;
+    padding:80px 8%
+}
+
+.running-card{
+    position:relative;
+    min-height:550px;
+    overflow:hidden;
+    border-radius:18px
+}
+
+.running-card img{
+    height:550px;
+    object-fit:cover
+}
+
+.running-card>div{
+    position:absolute;
+    bottom:25px;
+    left:25px;
+    color:white
+}
+
+.running-card h2{font-size:42px}
+.running-card a{font-weight:bold}
+
+/* NEWSLETTER + FOOTER */
+
+.newsletter{
+    background:#F28C28;
+    padding:70px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:30px
+}
+
+.newsletter h2{font-size:48px}
+.newsletter input{
+    padding:14px;
+    width:260px;
+    border:0
+}
+
+footer{
+    background:#101C2C;
+    color:#F5F0E6;
+    padding:60px 8% 25px;
+    display:grid;
+    grid-template-columns:2fr repeat(4,1fr);
+    gap:30px
+}
+
+.footer-column{
+    display:flex;
+    flex-direction:column;
+    gap:8px
+}
+
+.footer-column a{font-size:13px}
+.footer-bottom{
+    grid-column:1/-1;
+    border-top:1px solid #445063;
+    padding-top:20px;
+    font-size:12px
+}
+
+/* OUR STORY */
+
+.about-intro{
+    text-align:center;
+    padding:80px 8% 40px
+}
+
+.about-intro h1{
+    font-size:78px;
+    line-height:1;
+    margin-bottom:20px
+}
+
+.about-intro>p:last-child{
+    max-width:600px;
+    margin:auto
+}
+
+.about-hero-image{padding:0 8% 80px}
+.about-hero-image img{
+    height:500px;
+    object-fit:cover;
+    border-radius:18px
+}
+
+.about-belief{
+    padding:80px 8%;
+    background:#E8E2D7;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px
+}
+
+.about-belief-heading h2{
+    font-size:55px;
+    line-height:1
+}
+
+.about-belief-text p{margin-bottom:18px}
+.about-belief-text strong{display:block;margin-top:25px}
+
+.principles-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:18px
+}
+
+.principle-card{padding:30px}
+.principle-card span{
+    color:#F28C28;
+    font-size:35px;
+    font-weight:bold
+}
+
+.principle-card h3{
+    margin:20px 0 10px;
+    font-size:22px
+}
+
+.timeline{
+    background:#E8E2D7
+}
+
+.timeline-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+    border-top:2px solid #101C2C;
+    padding-top:25px
+}
+
+.timeline-item strong{
+    color:#F28C28;
+    font-size:28px
+}
+
+.timeline-item h3{margin:10px 0}
+
+.visit-section{
+    display:grid;
+    grid-template-columns:1fr 1fr
+}
+
+.visit-content{
+    background:#101C2C;
+    color:#F5F0E6;
+    padding:70px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center
+}
+
+.visit-content h2{font-size:50px}
+.visit-content a{
+    color:#F28C28;
+    margin-top:20px;
+    font-weight:bold
+}
+
+.map-placeholder{
+    background:#D9E0D5;
+    min-height:350px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center
+}
+
+.people-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:18px
+}
+
+.person-card img{
+    height:400px;
+    object-fit:cover
+}
+
+.person-info{padding:25px}
+.person-info h3{font-size:23px}
+.person-role{
+    color:#F28C28;
+    font-size:12px;
+    font-weight:bold;
+    margin:5px 0 15px
+}
+
+.about-cta{
+    background:#1769E0;
+    text-align:center;
+    padding:90px 8%
+}
+
+.about-cta h2{
+    font-size:65px;
+    line-height:1;
+    margin-bottom:20px
+}
+
+.about-cta>p:not(.small-heading){
+    max-width:500px;
+    margin:0 auto 25px
+}
+
+@media(max-width:768px){
+    .nav-links{
+    display:flex;
+    gap:10px;
+}
+
+    .hero{padding:70px 6%;min-height:500px}
+    .hero h1,.about-intro h1{font-size:55px}
+
+    .categories,.new-arrivals,.people-section,.principles,.timeline{
+        padding:60px 6%
+    }
+
+    .category-grid,.product-grid{
+        grid-template-columns:1fr 1fr
+    }
+
+    .category-card img{height:240px}
+
+    .section-heading h2{font-size:40px}
+
+    .running-collections,
+    .about-belief,
+    .visit-section{
+        grid-template-columns:1fr;
+        padding:60px 6%
+    }
+
+    .running-card{min-height:450px}
+    .running-card img{height:450px}
+
+    .newsletter{
+        flex-direction:column;
+        align-items:flex-start;
+        padding:60px 6%
+    }
+
+    footer{grid-template-columns:1fr 1fr}
+
+    .about-hero-image{padding:0 6% 60px}
+    .about-hero-image img{height:350px}
+
+    .about-belief{gap:35px}
+    .principles-grid,.people-grid{grid-template-columns:1fr}
+    .timeline-grid{grid-template-columns:1fr 1fr}
+
+    .visit-content{padding:60px 6%}
+    .about-cta h2{font-size:50px}
+}
+
+@media(max-width:480px){
+    .category-grid,.product-grid,.timeline-grid{
+        grid-template-columns:1fr
+    }
+
+    .hero h1,.about-intro h1{font-size:48px}
+    .newsletter h2{font-size:38px}
+
+    .newsletter form{
+        display:flex;
+        width:100%
+    }
+
+    .newsletter input{width:100%}
+    .about-cta h2{font-size:45px}
+    .horse-logo{
+    width:140px;
+    right:50%;
+    transform:translateX(50%);
+    bottom:20px;
+}
+}
+.hero{
+    position:relative;
+}
